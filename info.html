@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="info.css">
+    <style>
+        .container {
+            background-color: #ccc;
+            border: 2px solid #ccc;
+            text-align: center;
+            overflow: visible; /* Permite que las imágenes sobresalgan del contenedor */
+           
+        }
+
+        .personaje_1,
+        .personaje_2,
+        .personaje_3 {
+            display: inline-block;
+            margin: 10px;
+            text-align: center;
+            width: 270px;
+        }
+
+        .imagen_personaje img {
+            width: 100%;
+            margin-top: 890px;
+            max-width: 150px;
+            height: auto;
+            display: block;
+            margin: 0 auto; /* Centra las imágenes dentro de su contenedor */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="personaje_1">
+            <div class="imagen_personaje">
+                <img src="./img/1.png" alt="">
+            </div>
+            <div class="detalle">
+                <h2>Vegeta</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum, ex inventore, provident corporis natus esse dolore.</p>
+            </div>
+        </div>
+
+        <div class="personaje_2">
+            <div class="imagen_personaje">
+                <img src="./img/2.png" alt="">
+            </div>
+            <div class="detalle_2">
+                <h2>Goku</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum, ex inventore, provident corporis natus esse dolore.</p>
+            </div>
+        </div>
+
+        <div class="personaje_3">
+            <div class="imagen_personaje">
+                <img src="./img/3.png" alt="">
+            </div>
+            <div class="detalle_3">
+                <h2>Gohan</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum, ex inventore, provident corporis natus esse dolore.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

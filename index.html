@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    <link style="width: 150px; height: 150px;" rel="icon" href="./img/1-removebg-preview.png">
+    <style>
+        
+        /* Estilo personalizado para el botón */
+        .custom-button {
+            border-radius: 5px; /* Bordes redondeados */
+            background-color: #007bff; /* Color primario (azul en el caso de Bootstrap) */
+            color: #ffffff; /* Texto en color blanco para contrastar */
+            padding: 10px 20px; /* Ajusta el relleno según sea necesario */
+            text-decoration: none; /* Elimina la subrayado del enlace */
+            display: inline-block; /* Hace que el botón se comporte como un bloque en línea */
+        }
+
+        /* Estilo adicional para el efecto hover (opcional) */
+        .custom-button:hover {
+            background-color: #0056b3; /* Cambia el color al pasar el ratón sobre el botón */
+        }
+    </style>
+    <title>Shoes Store</title>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="logo">
+                <img src="./img/1-removebg-preview.png" alt="">
+            </div>
+            <div class="links">
+                <a href="">HOME</a>
+                <a href="">EXPLORE</a>
+            </div>
+            <div class="search">
+                <div class="search-bar" className="search-bar">
+                    <i  class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search" />
+                </div>
+                <a class="custom-button" href="#">Sign in</a>
+                <a class="custom-buttonn" href="">Sing up</a>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="content">
+            <div class="main-content">
+                <h1 data-aos="fade-right" data-aos-duration="2000">StudyStore</h1>
+                <h2 data-aos="fade-left" data-aos-duration="2000" data-aos-delay="200">Centro de aprendizaje colaborativo</h2>
+                <h4 data-aos="fade-right" data-aos-duration="2000" data-aos-delay="400">EXPLORAR EL CONOCIMIENTO JUNTOS</h4>
+                <p data-aos="flip-down" data-aos-duration="2000" data-aos-delay="600">Mejore su experiencia de aprendizaje con StudyStore, una plataforma colaborativa que brinda colaboración en tiempo real, recursos compartidos y sesiones de estudio interactivas. Adopte un diseño moderno y una interfaz fácil de usar y celebre el placer del aprendizaje colaborativo.</p>
+                <div class="order">
+                    <h3 data-aos="zoom-in-right" data-aos-duration="2000" data-aos-delay="800">Únete gratis</h3>
+                    <button data-aos="zoom-in-left" data-aos-duration="2000" data-aos-delay="800">REGÍSTRATE AHORA</button>
+                </div>
+            </div>
+            <div class="image">
+                <img src="./img/website_traffic.png" data-aos="zoom-in" data-aos-duration="2000">
+            </div>
+        </div>
+    </section>
+
+
+
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset:1
+      });
+    </script>
+</body>
+</html>

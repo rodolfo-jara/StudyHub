@@ -1,0 +1,151 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #111622;
+}
+
+nav {
+    width: 100%;
+    height: 10vh;
+    border-bottom: 2.5px solid white;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.container .logo img {
+    margin-top: 15px;
+    height: 160px;
+    width: 200px;
+}
+
+.container .links {
+    display: flex;
+    align-items: center;
+    margin-top: 15px; /* Espaciado superior en dispositivos pequeños */
+}
+
+.container .links a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    margin: 0 15px; /* Reducción del margen en dispositivos pequeños */
+    transition: 0.3s linear;
+}
+
+.links a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    background-color: #213052;
+    height: 3.5px;
+    transition: 0.3s linear;
+}
+
+.links a:hover::before,
+.links a:hover {
+    color: #91a3cf;
+    width: 100%;
+}
+
+.container .search {
+    margin-left: auto;
+    margin-top: 15px; /* Espaciado superior en dispositivos pequeños */
+    display: flex;
+    align-items: center;
+}
+
+.container .search i {
+    color: white;
+    cursor: pointer;
+}
+
+.container .search a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    margin: 0 7px;
+    transition: 0.9s linear;
+}
+
+.custom-button,
+.custom-buttonn {
+    border-radius: 10px;
+    /* Bordes redondeados */
+    text-decoration: none;
+    /* Elimina la subrayado del enlace */
+    display: inline-block;
+    /* Hace que el botón se comporte como un bloque en línea */
+}
+
+.custom-button,
+.custom-buttonn {
+    padding: 10px 20px;
+    /* Ajusta el relleno según sea necesario */
+}
+
+.custom-button {
+    background-color: #007bff;
+    /* Color primario (azul en el caso de Bootstrap) */
+    color: #ffffff;
+    /* Texto en color blanco para contrastar */
+}
+
+.custom-buttonn {
+    background-color: #243047;
+    /* Color primario (azul en el caso de Bootstrap) */
+    color: #ffffff;
+    /* Texto en color blanco para contrastar */
+}
+
+/* Estilo adicional para el efecto hover (opcional) */
+.custom-button:hover {
+    background-color: #050e64;
+    /* Cambia el color al pasar el ratón sobre el botón */
+}
+
+/* Estilo adicional para el efecto hover (opcional) */
+.custom-buttonn:hover {
+    background-color: #007bff;
+    /* Cambia el color al pasar el ratón sobre el botón */
+}
+
+/* Media query para dispositivos con un ancho máximo de 600px */
+@media only screen and (max-width: 500px) {
+    .container .links a {
+        margin: 0 10px; /* Ajusta el margen en dispositivos más pequeños */
+    }
+
+    .container .search i {
+        font-size: 1.1rem; /* Ajusta el tamaño del ícono de búsqueda en dispositivos más pequeños */
+    }
+}
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #243047;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    width: 350px;
+  }
+  
+  .search-bar input {
+    border: none;
+    background: none;
+    outline: none;
+    color: #fff;
+  }
